@@ -9,6 +9,15 @@ Examples:
 - single_number([5,2,3,2,3]) -> 5
 - single_number([10]) -> 10
 """
+
+
 def single_number(nums):
     # Your code here
+    for i in nums:
+        if nums.count(i) == 1:
+            return i
 
+
+print(single_number([3, 3, 2]))
+print(single_number([10]))
+print(single_number([5, 2, 3, 2, 3]))
